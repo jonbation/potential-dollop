@@ -233,16 +233,3 @@ for element in elements {
 ```
 
 ---
-
-## Author
-
-Nabil Chatbi, scinfu@gmail.com
-
-Current maintainer: Alex Ehlke, available for hire for SwiftSoup related work or other iOS projects: alex dot ehlke at gmail
-
-## Note
-SwiftSoup was ported to Swift from Java [Jsoup](https://jsoup.org/) library.
-
-## License
-
-SwiftSoup is available under the MIT license. See the [LICENSE](https://github.com/scinfu/SwiftSoup/blob/master/LICENSE) file for more info.
