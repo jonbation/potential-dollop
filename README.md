@@ -2,18 +2,7 @@
   <img src="https://raw.githubusercontent.com/scinfu/SwiftSoup/master/swiftsoup.png" alt="SwiftSoup" title="SwiftSoup">
 </p>
 
-![Platform OS X | iOS | tvOS | watchOS | Linux](https://img.shields.io/badge/platform-Linux%20%7C%20OS%20X%20%7C%20iOS%20%7C%20tvOS%20%7C%20watchOS-orange.svg)
-[![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
-![🐧 linux: ready](https://img.shields.io/badge/%F0%9F%90%A7%20linux-ready-red.svg)
-![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)
-[![Build Status](https://travis-ci.org/scinfu/SwiftSoup.svg?branch=master)](https://travis-ci.org/scinfu/SwiftSoup)
-[![Version](https://img.shields.io/cocoapods/v/SwiftSoup.svg?style=flat)](http://cocoapods.org/pods/SwiftSoup)
-[![License](https://img.shields.io/cocoapods/l/SwiftSoup.svg?style=flat)](http://cocoapods.org/pods/SwiftSoup)
-[![Twitter](https://img.shields.io/badge/twitter-@scinfu-blue.svg?style=flat)](http://twitter.com/scinfu)
-
----
-
-SwiftSoup is a pure Swift library designed for seamless HTML parsing and manipulation across multiple platforms, including macOS, iOS, tvOS, watchOS, and Linux. It offers an intuitive API that leverages the best aspects of DOM traversal, CSS selectors, and jQuery-like methods for effortless data extraction and transformation. Built to conform to the **WHATWG HTML5 specification**, SwiftSoup ensures that parsed HTML is structured just like modern browsers do.
+SwiftSoup is a pure Swift library designed for seamless HTML parsing and manipulation across multiple platforms, including macOS, iOS and Linux. It offers an intuitive API that leverages the best aspects of DOM traversal, CSS selectors, and jQuery-like methods for effortless data extraction and transformation. Built to conform to the **WHATWG HTML5 specification**, SwiftSoup ensures that parsed HTML is structured just like modern browsers do.
 
 ### Key Features:
 - **Parse and scrape** HTML from a URL, file, or string.
@@ -40,9 +29,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SwiftSoup'
 ```
-### Carthage
-SwiftSoup is also available through [Carthage](https://github.com/Carthage/Carthage). To install
-it, simply add the following line to your Cartfile:
 
 ```ruby
 github "scinfu/SwiftSoup"
@@ -61,45 +47,5 @@ targets: [
 ]
 ...
 ```
----
-## Usage Examples
-
-### Parse an HTML Document
-
-```swift
-import SwiftSoup
-
-let html = """
-<html><head><title>Example</title></head>
-<body><p>Hello, SwiftSoup!</p></body></html>
-"""
-
-let document: Document = try SwiftSoup.parse(html)
-print(try document.title()) // Output: Example
-```
-
----
-
-### Select Elements with CSS Query
-
-```swift
-let html = """
-<html><body>
-<p class='message'>SwiftSoup is powerful!</p>
-<p class='message'>Parsing HTML in Swift</p>
-</body></html>
-"""
-
-let document = try SwiftSoup.parse(html)
-let messages = try document.select("p.message")
-
-for message in messages {
-    print(try message.text())
-}
-// Output:
-// SwiftSoup is powerful!
-// Parsing HTML in Swift
-```
-
 ---
 
