@@ -1,7 +1,3 @@
-<p align="center" >
-  <img src="https://raw.githubusercontent.com/scinfu/SwiftSoup/master/swiftsoup.png" alt="SwiftSoup" title="SwiftSoup">
-</p>
-
 SwiftSoup is a pure Swift library designed for seamless HTML parsing and manipulation across multiple platforms, including macOS, iOS and Linux. It offers an intuitive API that leverages the best aspects of DOM traversal, CSS selectors, and jQuery-like methods for effortless data extraction and transformation. Built to conform to the **WHATWG HTML5 specification**, SwiftSoup ensures that parsed HTML is structured just like modern browsers do.
 
 ### Key Features:
